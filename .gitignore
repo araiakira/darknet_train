@@ -8,6 +8,8 @@ mnist/
 data/
 caffe/
 images/
+labels/
+*.txt
 *.jpg
 grasp/
 opencv/
