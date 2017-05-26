@@ -9,4 +9,11 @@ For questions or issues please use the [Google Group](https://groups.google.com/
 
 How to USE.
 
+gsutil cp gs://tsuchinoko traindata.tar.gz
+
+tar xzvf traindata.tar.gz
+
 ./darknet detector train yolo.data cfg/yolo.2.0.cfg -gpus 1
+
+./darknet yolo test cfg/yolo.2.0.cfg backup/yolo_final.weights testfile.jpg
+
